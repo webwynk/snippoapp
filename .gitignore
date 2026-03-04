@@ -5,3 +5,4 @@ server/data/db.json
 client/dist/
 .env
 server/.env
+dev.log

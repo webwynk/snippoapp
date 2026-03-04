@@ -4,9 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node --watch src/index.js",
-    "start": "node src/index.js",
+    "dev": "node --watch index.js",
+    "build": "echo \"No build step required\"",
+    "start": "node index.js",
     "jwt:secret": "node -e \"console.log(require('node:crypto').randomBytes(48).toString('hex'))\""
+  },
+  "engines": {
+    "node": ">=20 <25"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
